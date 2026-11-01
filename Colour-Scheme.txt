@@ -1,0 +1,47 @@
+Here is the Elemia GUARD colour wheel as it's used on the site.
+
+## Core brand palette
+
+| Colour | Hex | Where it appears |
+|---|---|---|
+| Black | `#000000` | Start of the page gradient, text on light buttons |
+| Periwinkle | `#9999FF` | Headings accent, borders, the Networking and Simulation button |
+| Cyan | `#66FFFF` | Links, quote, bullets, "Contribute Now!" buttons, the User Experience button |
+| Deep purple | `#4C0099` | End of the black-to-purple page gradient |
+| Royal blue | `#3333FF` | Logo nodes |
+| Mauve | `#A680B8` | Logo connecting lines, certificate banner |
+
+## Department colours
+
+| Department | Hex | Source |
+|---|---|---|
+| Networking and Simulation | `#9999FF` | Brand palette |
+| User Experience (SOON) | `#66FFFF` | Brand palette |
+| Threat Intelligence (SOON) | `#E619E6` | Added, magenta |
+| Policy Administration and Traffic Analysis | `#A6FF3D` | Added, lime |
+| Management and Research | `#FF9E33` | Added, orange |
+| Application Security (SOON) | `#E63946` | Added, red |
+
+The last four are not part of your official six-colour palette. I added them to give each department its own identity.
+
+## As CSS variables
+
+```css
+:root {
+  /* Brand palette */
+  --c-black:      #000000;
+  --c-periwinkle: #9999FF;
+  --c-cyan:       #66FFFF;
+  --c-purple:     #4C0099;
+  --c-blue:       #3333FF;
+  --c-mauve:      #A680B8;
+
+  /* Department accents */
+  --c-dept-threat:     #E619E6;
+  --c-dept-pata:       #A6FF3D;
+  --c-dept-management: #FF9E33;
+  --c-dept-appsec:     #E63946;
+}
+```
+
+The live circle (`#3ddc6f`), the WhatsApp button (`#25D366`), the privacy warning (`#ff3b3b`) and the placeholder text (`#ffcf6b`) are functional colours, so they sit outside the wheel.
